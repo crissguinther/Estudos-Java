@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class App {
+public class AulaDate {
     public static void main(String[] args) throws Exception {
 
         // Classe SimpleDateFormat serve para formatar uma data em um formato específico
