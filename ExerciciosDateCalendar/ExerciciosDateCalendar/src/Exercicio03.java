@@ -1,10 +1,10 @@
-package src.course;
+package ExerciciosDateCalendar.src;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Exercicio01 {
+public class Exercicio03 {
 
     public static void main(String[] args) {
         // Write a Java program to create a Date object using the Calendar class

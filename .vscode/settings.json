@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Date/src",
-        "Calendar"
+        "Calendar",
+        "ExerciciosDateCalendar"
     ]
 }
