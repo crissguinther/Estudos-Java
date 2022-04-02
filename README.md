@@ -1,2 +1,3 @@
-#Curso de Java
-Curso de Java adquirido na Udemy
+#Estudos
+
+Esse repositório contém meus estudos sobre a linguagem Java, incluindo exercícios
