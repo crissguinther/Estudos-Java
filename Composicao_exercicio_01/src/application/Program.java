@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.TimeZone;
 
 import entities.Department;
 import entities.HourContract;
@@ -12,6 +11,7 @@ import entities.Worker;
 import entitiesEnums.WorkerLevel;
 
 public class Program {
+
     public static void main(String[] args) throws Exception {
 
         Locale.setDefault(Locale.US);
