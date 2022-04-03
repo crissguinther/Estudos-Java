@@ -79,7 +79,7 @@ public class Worker {
             int c_year = cal.get(Calendar.YEAR);
             int c_month = (1 + cal.get(Calendar.MONTH));
 
-            if (c_year == year && c_month == month)
+            if (year.equals(c_year) && month.equals(c_month))
                 sum += c.totalValue();
         }
         return sum;
