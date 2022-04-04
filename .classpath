@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Calendar"/>
+	<classpathentry kind="src" path="Composicao_exercicio_01/src"/>
+	<classpathentry kind="src" path="Composicao_exercicio_02/src"/>
+	<classpathentry kind="src" path="Date/src"/>
+	<classpathentry kind="src" path="Enumeracoes/Enumeracoes/src"/>
+	<classpathentry kind="src" path="ExerciciosDateCalendar"/>
+	<classpathentry kind="src" path="stringBuilder/src"/>
+	<classpathentry kind="output" path="Composicao_exercicio_01/bin"/>
+</classpath>
