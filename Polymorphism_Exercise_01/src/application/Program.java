@@ -70,6 +70,7 @@ public class Program {
 			System.out.println(e.getName() + " - $" + e.payment());
 		}
 
+		sc.close();
 	}
 
 }
