@@ -35,12 +35,12 @@ public class Account {
 		return balance;
 	}
 
-	public void deposit(Double ammount) {
-		balance += ammount;
+	public void deposit(Double amount) {
+		balance += amount;
 	}
 	
-	public void withdraw(Double ammount) {
-		if(ammount <= balance) balance -= ammount;
+	public void withdraw(Double amount) {
+		if(amount <= balance) balance -= amount + 5.0;
 	}
 
 }

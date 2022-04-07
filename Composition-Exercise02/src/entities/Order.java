@@ -75,8 +75,8 @@ public class Order {
 		sb.append("Order moment: " + sdf.format(moment) + "\n");
 		sb.append("Order status: " + status + "\n");
 		sdf.applyPattern("dd/MM/yyyy");
-		sb.append("Client: " + client.getName() + " " + sdf.format(client.getBirthDate()) + " - " + client.getEmail()
-				+ "\n");
+		sb.append("Client: " + client.getName() + " " + "(" + sdf.format(client.getBirthDate()) + ")" + " - "
+				+ client.getEmail() + "\n");
 		sb.append("Order items: \n");
 		for (OrderItem o : items) {
 			sb.append(o.getProduct().getName());

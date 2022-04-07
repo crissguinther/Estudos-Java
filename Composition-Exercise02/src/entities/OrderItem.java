@@ -4,6 +4,7 @@ public class OrderItem {
 
 	private Integer quantity;
 	private Double price;
+	
 	private Product product;
 	
 	public OrderItem() {
@@ -11,6 +12,7 @@ public class OrderItem {
 	}
 	
 	public OrderItem(Integer quantity, Product product) {
+		super();
 		this.quantity = quantity;
 		this.product = product;
 		this.price = product.getPrice();
