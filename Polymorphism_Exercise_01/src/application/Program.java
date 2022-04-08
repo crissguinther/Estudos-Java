@@ -24,26 +24,13 @@ public class Program {
 			System.out.println("Enter employee #" + i + " data");
 
 			Employee employee = null;
-			Boolean outsourced = null;
+			
+			System.out.print("Outsourced (y/n)?: ");
 
-			do {
-				System.out.print("Outsourced (y/n)? ");
-
-				switch (sc.next()) {
-				case "y":
-					outsourced = true;
-					break;
-				case "n":
-					outsourced = false;
-					break;
-				default:
-					System.out.println("Please, enter \"y\" or \"n\" ");
-					continue;
-				}
-
-			} while (outsourced.equals(null));
-
-			if (outsourced.equals(true))
+			char outsourced = sc.next().charAt(0);
+			sc.nextLine();
+						
+			if (outsourced == 'y')
 				employee = new OutsourcedEmployee();
 			else
 				employee = new Employee();
@@ -58,7 +45,7 @@ public class Program {
 			System.out.print("Value per hour: ");
 			employee.setValuePerHour(sc.nextDouble());
 
-			if (outsourced.equals(true)) {
+			if (outsourced == 'y') {
 				System.out.print("Additional charge: ");
 				((OutsourcedEmployee) employee).setAdditionalCharge(sc.nextDouble());
 			}
@@ -71,6 +58,7 @@ public class Program {
 		}
 
 		sc.close();
+
 	}
 
 }
