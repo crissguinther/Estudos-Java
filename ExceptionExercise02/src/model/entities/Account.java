@@ -52,16 +52,16 @@ public class Account {
 		balance += ammount;
 	}
 
-	public void withdraw(Double ammount)throws BusinessException {
+	public void withdraw(Double ammount) {
 		validateWithdraw(ammount);
-		balance -= ammount;	
+		balance -= ammount;
 	}
-	
-	private void validateWithdraw(double ammount) throws BusinessException {
-		if (ammount > withdrawLimit) 
+
+	private void validateWithdraw(double ammount) {
+		if (ammount > withdrawLimit)
 			throw new BusinessException("The ammount exceeds withdraw limit");
-			
-		if(ammount > balance)
+
+		if (ammount > balance)
 			throw new BusinessException("Not enough balance");
 	}
 
