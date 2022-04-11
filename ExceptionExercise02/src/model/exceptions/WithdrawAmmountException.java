@@ -1,6 +1,6 @@
 package model.exceptions;
 
-public class WithdrawAmmountException extends RuntimeException {
+public class WithdrawAmmountException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 

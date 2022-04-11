@@ -53,7 +53,7 @@ public class Account {
 		balance += ammount;
 	}
 
-	public void withdraw(Double ammount) {
+	public void withdraw(Double ammount) throws WithdrawLimitException, WithdrawAmmountException {
 		if (ammount > withdrawLimit) 
 			throw new WithdrawLimitException("The ammount exceeds withdraw limit");
 			
