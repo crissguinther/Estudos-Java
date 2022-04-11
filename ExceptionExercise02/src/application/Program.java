@@ -5,8 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Account;
-import model.exceptions.WithdrawAmmountException;
-import model.exceptions.WithdrawLimitException;
+import model.exceptions.BusinessException;
 
 public class Program {
 
@@ -35,9 +34,7 @@ public class Program {
 			acc.withdraw(ammount);
 			System.out.printf("Withdraw of %.2f%n", ammount);
 			System.out.printf("New balance: %.2f", acc.getBalance());
-		} catch (WithdrawAmmountException e) {
-			System.out.println(e.getMessage());
-		} catch (WithdrawLimitException e) {
+		} catch (BusinessException e) {
 			System.out.println(e.getMessage());
 		} catch (InputMismatchException e) {
 			System.out.println("Please, enter a valid name/number!");

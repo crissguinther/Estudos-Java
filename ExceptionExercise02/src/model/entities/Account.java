@@ -1,7 +1,6 @@
 package model.entities;
 
-import model.exceptions.WithdrawAmmountException;
-import model.exceptions.WithdrawLimitException;
+import model.exceptions.BusinessException;
 
 public class Account {
 
@@ -53,15 +52,17 @@ public class Account {
 		balance += ammount;
 	}
 
-	public void withdraw(Double ammount) throws WithdrawLimitException, WithdrawAmmountException {
+	public void withdraw(Double ammount)throws BusinessException {
+		validateWithdraw(ammount);
+		balance -= ammount;	
+	}
+	
+	private void validateWithdraw(double ammount) throws BusinessException {
 		if (ammount > withdrawLimit) 
-			throw new WithdrawLimitException("The ammount exceeds withdraw limit");
+			throw new BusinessException("The ammount exceeds withdraw limit");
 			
 		if(ammount > balance)
-			throw new WithdrawAmmountException("Not enough balance");
-		
-		balance -= ammount;	
-			
+			throw new BusinessException("Not enough balance");
 	}
 
 }
